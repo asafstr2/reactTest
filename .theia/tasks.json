@@ -1,0 +1,22 @@
+{
+    "tasks": [
+        {
+            "type": "che",
+            "label": "install all required dependencies",
+            "command": "npm install",
+            "target": {
+                "workingDir": "${CHE_PROJECTS_ROOT}/react-redux-realworld-example-app",
+                "component": "nodejs"
+            }
+        },
+        {
+            "type": "che",
+            "label": "start the local server",
+            "command": "npm start",
+            "target": {
+                "workingDir": "${CHE_PROJECTS_ROOT}/reactTest",
+                "component": "nodejs"
+            }
+        }
+    ]
+}
